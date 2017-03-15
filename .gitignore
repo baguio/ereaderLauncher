@@ -1,0 +1,10 @@
+bin/
+gen/
+*.class
+obj/*
+jni/help/
+libs/armeabi/*
+libs/*_dex2jar.jar
+docs/
+.hg.old
+libs/commons-io-2.1/

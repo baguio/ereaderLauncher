@@ -8,6 +8,8 @@ android {
 
     defaultConfig {
         applicationId "uk.co.droidinactu.ebooklauncher"
+        versionCode 65
+        versionName "0.1.0.05r"
         minSdkVersion 7
         targetSdkVersion 8
 

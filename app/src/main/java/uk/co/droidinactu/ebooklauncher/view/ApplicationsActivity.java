@@ -143,13 +143,6 @@ public final class ApplicationsActivity extends AbstractListActivity implements 
 		if (v.getTag() == null) {
 			final String btnPressed = ((Button) v).getText().toString();
 			filterChar = btnPressed;
-
-		} else if (v.getTag().equals("app_grid_btn_grid")) {
-			showNotImplementedDialog();
-
-		} else if (v.getTag().equals("app_grid_btn_close")) {
-			finish();
-
 		}
 	}
 
@@ -160,11 +153,6 @@ public final class ApplicationsActivity extends AbstractListActivity implements 
 		this.setContentView(DeviceFactory.getAppsGridLayout());
 
 		myApp = (EBookLauncherApplication) getApplication();
-
-		if (DeviceFactory.isNook()) {
-			final ImageButton btnClose = (ImageButton) findViewById(R.id.app_grid_btn_close);
-			btnClose.setOnClickListener(this);
-		}
 
 		mAppGrid = (EInkGridView) findViewById(R.id.apps_grid);
 		mAppGrid.setVisibility(View.VISIBLE);

@@ -20,7 +20,6 @@
         android:id="@+id/app_grid_toolbar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/app_grid_btn_index_scroll"
         android:background="@drawable/underline"
         android:orientation="horizontal" >
 
@@ -28,42 +27,25 @@
             android:id="@+id/app_grid_txt_books"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.0"
             android:tag="app_grid_txt_books"
             android:text="@string/app_grid_title"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@android:color/black" />
-
-        <!-- ImageButton
-            android:id="@+id/app_grid_btn_grid"
-            android:layout_width="44dip"
-            android:layout_height="44dip"
-            android:layout_gravity="right"
-            android:src="@drawable/btn_list"
-            android:tag="app_grid_btn_grid" />
-
-        <ImageButton
-            android:id="@+id/app_grid_btn_close"
-            android:layout_width="44dip"
-            android:layout_height="44dip"
-            android:layout_gravity="right"
-            android:src="@drawable/btn_close"
-            android:tag="app_grid_btn_close" / -->
     </LinearLayout>
 
     <uk.co.droidinactu.common.view.EInkGridView
         android:id="@+id/apps_grid"
         android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1.0"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/app_grid_toolbar"
         android:alwaysDrawnWithCache="true"
         android:background="@android:color/white"
-        android:columnWidth="128dp"
         android:drawSelectorOnTop="false"
         android:numColumns="auto_fit"
-        android:persistentDrawingCache="animation|scrolling"
         android:scrollbars="none"
-        android:stackFromBottom="true"
-        android:stretchMode="spacingWidth" />
+        android:stretchMode="spacingWidth"
+        android:persistentDrawingCache="animation|scrolling"
+        android:columnWidth="128dp"
+        android:stackFromBottom="true" />
 
 </LinearLayout>

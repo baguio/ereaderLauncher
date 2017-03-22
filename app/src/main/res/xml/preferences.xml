@@ -37,4 +37,9 @@
         android:summaryOn="@string/pref_use_filenames_yes"
         android:title="@string/pref_use_filenames" />
 
+    <Preference
+        android:enabled="false"
+        android:title="@string/app_name"
+        android:summary="@string/app_versionname" />
+
 </PreferenceScreen>

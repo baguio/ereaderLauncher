@@ -252,16 +252,6 @@
         android:textSize="7pt" />
 
     <TextView
-        android:id="@+id/page1_text_app_version_nbr"
-        style="@style/MyDefaultTextAppearance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="18dip"
-        android:layout_marginRight="8dip" />
-
-    <TextView
         android:id="@+id/page1_text_page_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -225,7 +225,6 @@ public final class EBookLauncherActivity extends Activity implements OnClickList
     private EBookLauncherApplication myApp;
 
     private Button btnSettings;
-    private TextView lblAppVerNbr;
 
     @Override
     protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
@@ -382,8 +381,6 @@ public final class EBookLauncherActivity extends Activity implements OnClickList
         imgBtnCollection2Prev.setOnClickListener(this);
 
         lblClock = (TextView) findViewById(R.id.page1_text_clock);
-        lblAppVerNbr = (TextView) findViewById(R.id.page1_text_app_version_nbr);
-        lblAppVerNbr.setText("Ver: " + myApp.getAppVersion());
 
         lblCurrentRead = (TextView) findViewById(R.id.page1_text_currently_reading_lbl);
         lblCollection1 = (TextView) findViewById(R.id.page1_text_collection1_lbl);
